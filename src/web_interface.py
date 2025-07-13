@@ -242,7 +242,7 @@ img:hover {
 """
 
 class PCBDefectWebInterface:
-    """Futuristic Web interface for PCB defect detection using Streamlit. - Raj Patel"""
+    """Web interface for PCB defect detection using Streamlit. - Raj Patel"""
     
     def __init__(self):
         """Initialize the web interface. - Raj Patel"""
@@ -343,19 +343,12 @@ class PCBDefectWebInterface:
         ])
         
         with tab1:
-            st.markdown('<div class="glass-card">', unsafe_allow_html=True)
             self._image_upload_tab()
-            st.markdown('</div>', unsafe_allow_html=True)
         
         with tab2:
-            st.markdown('<div class="glass-card">', unsafe_allow_html=True)
             self._camera_photo_tab()
-            st.markdown('</div>', unsafe_allow_html=True)
-        
         with tab3:
-            st.markdown('<div class="glass-card">', unsafe_allow_html=True)
             self._batch_processing_tab()
-            st.markdown('</div>', unsafe_allow_html=True)
     
     def _create_sidebar(self):
         """Create professional sidebar with configuration options. - Raj Patel"""
