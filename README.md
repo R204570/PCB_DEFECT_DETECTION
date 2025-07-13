@@ -94,8 +94,7 @@ tqdm               # Progress bars for training
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repository-url>
-cd clean_project
+git clone https://github.com/R204570/PCB_DEFECT_DETECTION.git
 ```
 
 ### 2. Set Up Python Environment
@@ -110,22 +109,7 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### 3. Set Up Protection System (Linux)
-```bash
-# Make protection scripts executable
-chmod +x RAJ_PATEL_PROTECTION.sh
-chmod +x RAJ_PATEL_PROTECTION.py
-
-# Set proper permissions for all files
-chmod 755 src/
-chmod 644 src/*.py
-chmod 644 *.py *.yaml *.txt *.md
-
-# Run protection system (optional)
-./RAJ_PATEL_PROTECTION.sh
-```
-
-### 4. Install Dependencies
+### 3. Install Dependencies
 
 #### **Option A: CPU Installation (Recommended for Streamlit Cloud)**
 ```bash
