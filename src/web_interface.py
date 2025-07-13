@@ -529,7 +529,7 @@ class PCBDefectWebInterface:
             if uploaded_file is not None:
                 # Display original image
                 image = Image.open(uploaded_file)
-                st.image(image, caption="Original Image", use_column_width=True)
+                st.image(image, caption="Original Image", use_container_width=True)
                 
                 # Detection button
             if st.button("Analyze Image", type="primary"):
@@ -607,7 +607,7 @@ class PCBDefectWebInterface:
             if result['num_defects'] > 0:
                 # Create annotated image
                 annotated_image = self._create_annotated_image(original_image, result['detections'])
-                st.image(annotated_image, caption="Annotated Image", use_column_width=True)
+                st.image(annotated_image, caption="Annotated Image", use_container_width=True)
                 
                 # Detailed detection list
                 st.markdown("### Individual Detections")
@@ -698,7 +698,7 @@ class PCBDefectWebInterface:
         camera_input = st.camera_input("Take a photo for defect detection")
         if camera_input is not None:
             image = Image.open(camera_input)
-            st.image(image, caption="Captured Image", use_column_width=True)
+            st.image(image, caption="Captured Image", use_container_width=True)
             if st.button("Analyze Captured Image", type="primary"):
                 if self.detector is None:
                     st.error("Model not loaded. Please check sidebar configuration.")
@@ -935,7 +935,7 @@ class PCBDefectWebInterface:
             cols = st.columns(len(row_imgs))
             for col, img_info in zip(cols, row_imgs):
                 img_b64 = self._pil_to_base64(img_info['image'])
-                col.image(img_info['image'], caption=img_info['filename'], use_column_width=True)
+                col.image(img_info['image'], caption=img_info['filename'], use_container_width=True)
         # Modal overlay for enlarged image (if any, as before)
         enlarged_idx = st.session_state.get('enlarged_img_idx', None)
         if enlarged_idx is not None:
