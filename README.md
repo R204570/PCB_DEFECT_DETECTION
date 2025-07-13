@@ -131,7 +131,7 @@ pip install -r requirements.txt
 
 ```bash
 # Navigate to project directory
-cd < Project Directory Path >
+cd PCB_DEFECT_DETECTION
 # Run the application
 streamlit run main.py
 ```
