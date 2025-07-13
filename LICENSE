@@ -1,0 +1,48 @@
+MIT License
+
+Copyright (c) 2025 Raj Patel
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Project Information
+
+**Project:** PCB Defect Detection AI System  
+**Author:** Raj Patel  
+**LinkedIn:** https://www.linkedin.com/in/raj-patel5  
+**Technology Stack:** YOLOv8, Streamlit, PyTorch, OpenCV  
+**Year:** 2025  
+
+## Additional Terms
+
+1. **Attribution Required:** Any use of this software must include proper attribution to Raj Patel.
+2. **Code Protection:** The protection scripts included in this project are designed to prevent unauthorized copying and must not be modified or removed.
+3. **Commercial Use:** Commercial use is permitted under the MIT License, but attribution is still required.
+4. **Distribution:** You may distribute this software, but you must include this license file and maintain all protection mechanisms.
+
+## Contact Information
+
+For licensing inquiries, questions, or support:
+- **LinkedIn:** https://www.linkedin.com/in/raj-patel5
+- **Project:** PCB Defect Detection AI System
+
+---
+
+**Made with ❤️ by Raj Patel** 

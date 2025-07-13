@@ -1,0 +1,14 @@
+names:
+- spur
+- mouse_bite
+- missing_hole
+- short
+- open_circuit
+- spurious_copper
+- poor_solder
+- spike
+- excessive_solder
+- cold_solder_joint
+nc: 10
+train: train\images
+val: val\images

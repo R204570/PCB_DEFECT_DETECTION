@@ -1,0 +1,61 @@
+# PCB Defect Detection Configuration
+
+# Model Configuration
+model:
+  architecture: "yolov8"  # yolov8, yolov5, faster_rcnn
+  input_size: [640, 640]
+  confidence_threshold: 0.5
+  nms_threshold: 0.4
+  device: "auto"  # auto, cpu, cuda
+
+# Data Configuration
+data:
+  train_path: "data/Training Raw Data"
+  output_path: "output"
+  batch_size: 16
+  num_workers: 4
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+
+# Training Configuration
+training:
+  epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  scheduler: "cosine"
+  warmup_epochs: 3
+  save_frequency: 10
+
+# Defect Classes
+classes:
+  - "spur"              # 0 (was missing_hole)
+  - "mouse_bite"        # 1
+  - "missing_hole"      # 2 (was open_circuit)
+  - "short"             # 3
+  - "open_circuit"      # 4 (was spur)
+  - "spurious_copper"   # 5
+
+# Augmentation
+augmentation:
+  hsv_h: 0.015
+  hsv_s: 0.7
+  hsv_v: 0.4
+  degrees: 0.0
+  translate: 0.1
+  scale: 0.5
+  shear: 0.0
+  perspective: 0.0
+  flipud: 0.0
+  fliplr: 0.5
+  mosaic: 1.0
+  mixup: 0.0
+
+# Live Detection
+live_detection:
+  camera_id: 0
+  frame_width: 640
+  frame_height: 480
+  fps: 30
+  save_video: false
+  output_path: "output/live_detection.mp4" 
