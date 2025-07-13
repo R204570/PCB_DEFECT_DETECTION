@@ -10,7 +10,7 @@
 
 **A modern, AI-powered web application for PCB defect detection using YOLOv8 and Streamlit**
 
-*Developed with ❤️ by [Raj Patel](https://www.linkedin.com/in/raj-patel5)*
+*Developed by [Raj Patel](https://www.linkedin.com/in/raj-patel5)*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Raj%20Patel-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/raj-patel5)
 
