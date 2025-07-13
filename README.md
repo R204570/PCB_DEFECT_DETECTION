@@ -98,42 +98,45 @@ git clone https://github.com/R204570/PCB_DEFECT_DETECTION.git
 ```
 
 ### 2. Set Up Python Environment
-```bash
-# Create virtual environment
-python -m venv venv
 
-# Activate virtual environment
-# On Windows:
+## Windows
+
+```bash
+cd PCB_DEFECT_DETECTION
+python -m venv venv
 venv\Scripts\activate
-# On Linux/macOS:
+```
+## Linux / Unubtu 
+
+```bash
+cd PCB_DEFECT_DETECTION
+python3 -m venv venv
 source venv/bin/activate
 ```
-
 ### 3. Install Dependencies
 
 #### **Option A: CPU Installation (Recommended for Streamlit Cloud)**
+
 ```bash
 pip install -r requirements.txt
 ```
 
 #### **Option B: GPU Installation (For Local Development with NVIDIA GPU)**
 ```bash
+
 # Install PyTorch with CUDA support (adjust version as needed)
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
+
 ```
 
 ---
 
-## 🏃 Quick Start
-
-### Local Development
+### Run Application
 
 ```bash
-# Navigate to project directory
-cd PCB_DEFECT_DETECTION
 # Run the application
-streamlit run main.py
+python main.py web
 ```
 
 The application will open in your browser at `http://localhost:8501`
