@@ -11,6 +11,14 @@ import argparse
 import sys
 from pathlib import Path
 import yaml
+
+# Import Streamlit for web interface detection
+try:
+    import streamlit as st
+    STREAMLIT_AVAILABLE = True
+except ImportError:
+    STREAMLIT_AVAILABLE = False
+
 from src.data_preparation import PCBDataPreparator
 from src.model import PCBDefectDetector
 
@@ -261,4 +269,19 @@ def export_model(args):
     print(f"✅ Model exported to: {output_path}")
 
 if __name__ == "__main__":
-    main() 
+    # Check if running with streamlit
+    import sys
+    if STREAMLIT_AVAILABLE and ("streamlit" in sys.argv[0] or "streamlit" in " ".join(sys.argv).lower() or len(sys.argv) == 1):
+        # Run Streamlit app directly
+        print("🌐 Launching PCB Defect Detection Web Interface...")
+        print("Author: Raj Patel")
+        print("LinkedIn: https://www.linkedin.com/in/raj-patel5")
+        
+        # Import and run the web interface
+        from src.web_interface import PCBDefectWebInterface
+        
+        app = PCBDefectWebInterface()
+        app.main()
+    else:
+        # Run CLI interface
+        main() 
