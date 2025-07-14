@@ -136,7 +136,7 @@ pip install -r requirements.txt
 
 ```bash
 # Run the application
-python main.py web
+streamlit run main.py
 ```
 
 The application will open in your browser at `http://localhost:8501`
