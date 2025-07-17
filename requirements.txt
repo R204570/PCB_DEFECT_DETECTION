@@ -6,4 +6,3 @@ pyyaml
 matplotlib
 scikit-learn
 scikit-image
-protobuf==3.20.*
