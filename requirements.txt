@@ -1,10 +1,10 @@
-streamlit
-ultralytics
+apt:libgl1-mesa-glx
 opencv-python-headless
 numpy
-pillow
-matplotlib
-plotly
+streamlit
+Pillow
 pyyaml
-pandas 
-supervision
+matplotlib
+scikit-learn
+scikit-image
+protobuf==3.20.*
