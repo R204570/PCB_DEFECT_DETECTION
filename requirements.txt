@@ -1,4 +1,3 @@
-apt:libgl1-mesa-glx
 opencv-python-headless
 numpy
 streamlit
