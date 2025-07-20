@@ -8,3 +8,4 @@ scikit-learn
 scikit-image
 tqdm
 torch
+ultralytics
