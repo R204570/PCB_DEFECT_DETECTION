@@ -6,3 +6,4 @@ pyyaml
 matplotlib
 scikit-learn
 scikit-image
+tqdm
