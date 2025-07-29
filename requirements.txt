@@ -10,3 +10,4 @@ tqdm
 torch
 ultralytics
 supervision
+plotly
